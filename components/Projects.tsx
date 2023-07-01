@@ -1,6 +1,34 @@
 import Image from 'next/image'
 import React from 'react'
-import propertyImg from "./public/property.jpg"
+import propertyImg from "/public/property.jpg"
+import cryptoImg from "/public/crypto.jpg"
+import twitchImg from "/public/twitch.jpg"
+import netflixImg from "/public/netflix.jpg"
+import Link from 'next/link'
+import ProjectItem from './ProjectItem'
+
+const projects = [
+  {
+    title: "Propety Finder",
+    img: propertyImg,
+    url: "/property"
+  },
+  {
+    title: "Crypto App",
+    img: cryptoImg,
+    url: "/crypto"
+  },
+  {
+    title: "Netflix App",
+    img: netflixImg,
+    url: "/netflix"
+  },
+  {
+    title: "Twitch App",
+    img: twitchImg,
+    url: "/twitch"
+  }
+]
 
 const Projects = () => {
   return (
@@ -10,9 +38,14 @@ const Projects = () => {
         <h2 className='text-2xl py-4 font-bold'>What I've Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
 
-          <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]">
-            <Image src={propertyImg} alt="property"/>
-          </div>
+          {projects.map(project => (
+            <ProjectItem 
+              title={project.title} 
+              img={project.img} 
+              url={project.url}
+            />
+          ))}
+
 
         </div>
       </div>
