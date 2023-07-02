@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai"
 import { FaLinkedinIn, FaGithub } from "react-icons/fa"
 import { BsFillPersonLinesFill } from "react-icons/bs"
@@ -10,12 +10,24 @@ import { BsFillPersonLinesFill } from "react-icons/bs"
 const Navbar = () => {
 
   const [nav, setNav] = useState(false)
+  const [shadow, setShadow] = useState(false)
+
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true)
+      } else {
+        setShadow(false)
+      }
+    }
+    window.addEventListener('scroll', handleShadow)
+  }, [])
 
   const handleNav = () => {
     setNav(prevNav =>  !prevNav)
   }
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100]">
+    <div className={shadow ? "fixed w-full h-20 shadow-xl z-[100]" : "fixed w-full h-20 z-[100]"}>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
           <Image src="/logo.png" width={70} height={40} alt="logo"/>
@@ -27,22 +39,22 @@ const Navbar = () => {
                 Home
               </li>
             </Link>
-            <Link href="/about">
+            <Link href="/#about">
               <li className='ml-10 text-sm uppercase hover:border-b'>
                about
               </li>
             </Link>
-            <Link href="/skills">
+            <Link href="/#skills">
               <li className='ml-10 text-sm uppercase hover:border-b'>
                 Skills
               </li>
             </Link>
-            <Link href="/projects">
+            <Link href="/#projects">
               <li className='ml-10 text-sm uppercase hover:border-b'>
                 Projects
               </li>
             </Link>
-            <Link href="/contact">
+            <Link href="/#contact">
               <li className='ml-10 text-sm uppercase hover:border-b'>
                 Contact
               </li>
@@ -75,19 +87,19 @@ const Navbar = () => {
           <div className="py-4 flex flex-col">
             <ul className='uppercase'>
               <Link href="/">
-                <li className='py-4 text-sm'>Home</li>
+                <li className='py-4 text-sm' onClick={handleNav}>Home</li>
               </Link>
-              <Link href="/">
-                <li className='py-4 text-sm'>About</li>
+              <Link href="/#about">
+                <li className='py-4 text-sm' onClick={handleNav}>About</li>
               </Link>
-              <Link href="/">
-                <li className='py-4 text-sm'>skills</li>
+              <Link href="/#skills">
+                <li className='py-4 text-sm' onClick={handleNav}>skills</li>
               </Link>
-              <Link href="/">
-                <li className='py-4 text-sm'>Projects</li>
+              <Link href="/#projects">
+                <li className='py-4 text-sm' onClick={handleNav}>Projects</li>
               </Link>
-              <Link href="/">
-                <li className='py-4 text-sm'>Contact</li>
+              <Link href="/#contact">
+                <li className='py-4 text-sm' onClick={handleNav}>Contact</li>
               </Link>
             </ul>
             <div className="pt-20">
