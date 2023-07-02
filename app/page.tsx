@@ -4,6 +4,7 @@ import Skills from '@/components/Skills'
 import Image from 'next/image'
 import Projects from '../components/Projects'
 import { Metadata } from 'next'
+import Contact from '@/components/Contact'
  
 export const metadata: Metadata = {
   title: 'Jahz10 | Front-End Developer',
@@ -17,6 +18,7 @@ export default function Home() {
       <About />
       <Skills />
       <Projects />
+      <Contact />
     </main>
   )
 }
