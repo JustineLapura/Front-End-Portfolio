@@ -94,7 +94,7 @@ const Contact = () => {
                   </div>
                 </div>
               </form>
-              <button className="w-full p-4 text-gray-100 mt-4">Send Message</button>
+              <button className="w-full p-4 text-gray-100 mt-4 bg-[#5651e5] rounded-full">Send Message</button>
             </div>
           </div>
         </div>
