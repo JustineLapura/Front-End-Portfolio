@@ -4,6 +4,8 @@ import profile from "/public/champion.jpg";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import Link from "next/link";
+import { HiOutlineChevronDoubleUp } from "react-icons/hi"
 
 const Contact = () => {
   return (
@@ -92,8 +94,16 @@ const Contact = () => {
                   </div>
                 </div>
               </form>
+              <button className="w-full p-4 text-gray-100 mt-4">Send Message</button>
             </div>
           </div>
+        </div>
+        <div className="flex justify-center py-12">
+          <Link href='/'>
+            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-500">
+              <HiOutlineChevronDoubleUp className="text-[#5651e5]" size={30}/>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
