@@ -6,11 +6,31 @@ import React, {useState, useEffect} from 'react'
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai"
 import { FaLinkedinIn, FaGithub } from "react-icons/fa"
 import { BsFillPersonLinesFill } from "react-icons/bs"
+import { useRouter } from 'next/router'
+
 
 const Navbar = () => {
 
   const [nav, setNav] = useState(false)
   const [shadow, setShadow] = useState(false)
+  const [navBg, setNavBg] = useState("#ecf0f3")
+  const [linkColor, setLinkColor] = useState("#1f2937")
+  // const router = useRouter()
+
+  // useEffect(() => {
+  //   if(
+  //     router.asPath === "/property" ||
+  //     router.asPath === "/crypto" ||
+  //     router.asPath === "/netflix" ||
+  //     router.asPath === "/twitch"  
+  //   ) {
+  //     setNavBg("transparent")
+  //     setLinkColor("#f8f8f8")
+  //   }else {
+  //     setNavBg("#ecf0f3")
+  //     setLinkColor("#1f2937")
+  //   }
+  // }, [router])
 
   useEffect(() => {
     const handleShadow = () => {
@@ -123,37 +143,7 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-    // <nav className="bg-white shadow">
-    //     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    //       <div className="flex items-center justify-between h-16">
-    //         <div className="flex-shrink-0">
-    //           <span className="font-bold text-xl">Jahz 10 </span>
-    //         </div>
-    //         <div className="hidden md:block">
-    //           <div className="ml-10 flex items-baseline space-x-4">
-    //             <Link
-    //               href="/"
-    //               className="text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium"
-    //             >
-    //               Home
-    //             </Link>
-    //             <Link
-    //               href="/about"
-    //               className="text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium"
-    //             >
-    //               Projects
-    //             </Link>
-    //             <Link
-    //               href="/contact"
-    //               className="text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium"
-    //             >
-    //               Contact
-    //             </Link>
-    //           </div>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </nav>
+    
   )
 }
 export default Navbar
