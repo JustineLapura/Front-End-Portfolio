@@ -11,10 +11,10 @@ import { useRouter } from 'next/router'
 
 const Navbar = () => {
 
-  const [nav, setNav] = useState(false)
-  const [shadow, setShadow] = useState(false)
-  const [navBg, setNavBg] = useState("#ecf0f3")
-  const [linkColor, setLinkColor] = useState("#1f2937")
+  const [nav, setNav] = useState<boolean>(false)
+  const [shadow, setShadow] = useState<boolean>(false)
+  const [navBg, setNavBg] = useState<string>("#ecf0f3")
+  const [linkColor, setLinkColor] = useState<string>("#1f2937")
   // const router = useRouter()
 
   // useEffect(() => {
