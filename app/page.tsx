@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Projects from '../components/Projects'
 import { Metadata } from 'next'
 import Contact from '@/components/Contact'
+import Navbar from '@/components/Navbar'
  
 export const metadata: Metadata = {
   title: 'Jahz10 | Front-End Developer',
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="bg-gray-100">
+      <Navbar />
       <Main />
       <About />
       <Skills />

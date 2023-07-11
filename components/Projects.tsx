@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import propertyImg from "/public/property.jpg"
+import orderingImg from "/public/ordering.jpg"
 import cryptoImg from "/public/crypto.jpg"
 import twitchImg from "/public/twitch.jpg"
 import netflixImg from "/public/netflix.jpg"
@@ -9,8 +9,8 @@ import ProjectItem from './ProjectItem'
 
 const projects = [
   {
-    title: "Propety Finder",
-    img: propertyImg,
+    title: "Food Ordering App",
+    img: orderingImg,
     url: "/property"
   },
   {
