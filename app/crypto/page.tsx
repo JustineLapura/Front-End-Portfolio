@@ -8,6 +8,7 @@ const page = () => {
       <Project
         projectImg={cryptoImg}
         title="Crypto App"
+        url="/crypto/demo-1"
         overview="A crypto app, also known as a cryptocurrency app, is a software application designed to facilitate the buying, selling, storing, and managing of cryptocurrencies. These apps provide users with a user-friendly interface to interact with various digital currencies, such as Bitcoin, Ethereum, Litecoin, and many others."
         technologies={[
             "HTML", 
