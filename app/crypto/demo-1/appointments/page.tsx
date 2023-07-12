@@ -1,6 +1,66 @@
-import React from "react";
+"use client"
+import React, { useContext } from "react";
+import { AppointmentContext } from "@/context/DentalClinicContext/AppointmentContext";
+import { nanoid } from 'nanoid';
+
+type AppointmentType = {
+  id: string;
+  name: string;
+  date: string;
+  time: string;
+  service: string;
+  status: string;
+}[];
+
 
 const page = () => {
+  const {
+    date,
+    time,
+    service,
+    errorMessage,
+    isInvalidDate,
+    isInvalidTime,
+    setDate,
+    setIsInvalidDate,
+    setTime,
+    setIsInvalidTime,
+    setErrorMessage,
+    appointments,
+    setAppointments,
+    handleServiceChange
+  } = useContext(AppointmentContext)
+
+  // const handleBookAppointment = (e: React.MouseEvent<HTMLButtonElement>) => {
+  //   e.preventDefault();
+  
+  //   // Check if the selected date and time already exist in the appointments array
+  //   const isDuplicate = appointments.some((appointment:AppointmentType) => appointment.date === date && appointment.time === time);
+  
+  //   if (isDuplicate) {
+  //     setErrorMessage("This appointment date and time is already taken. Please choose a different date and time.");
+  //   } else if (date !== "" && time !== "" && service !== "" && !isInvalidDate && !isInvalidTime) {
+  //     const newAppointment = {
+  //       id: nanoid(),
+  //       name: `${selectedUser.firstName} ${selectedUser.lastName}`,
+  //       date,
+  //       time,
+  //       status: "Pending",
+  //       service
+  //     };
+  
+  //     // Update only the new appointment status to "Pending" and keep the existing appointments' statuses intact
+  //     const updatedAppointments = [newAppointment, ...appointments];
+  
+  //     setAppointments(updatedAppointments);
+  //     setErrorMessage(null);
+  //   } else {
+  //     setErrorMessage("Please fill the form correctly!");
+  //   }
+  // };
+
+
+
   return (
     <div>
       <div className="p-4 mx-auto">
@@ -99,6 +159,7 @@ const page = () => {
               {/* <h6 className="mx-auto mt-2 text-red-500">Error messge</h6> */}
               <div className="py-3">
                 <button
+                  // onClick={handleBookAppointment}
                   className="btn-sm font-bold bg-red-500 text-white py-2 px-4 rounded-lg"
                   type="submit"
                 >
