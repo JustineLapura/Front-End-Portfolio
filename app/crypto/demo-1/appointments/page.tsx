@@ -4,7 +4,7 @@ const page = () => {
   return (
     <div>
       <div className="p-4 mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-5 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-5 items-center">
           <div className="md:col-span-1 w-[75%] lg:h-[75%] m-auto">
             <h1 className="text-center font-bold">Schedules:</h1>
             <table className="h-full w-full table-fixed md:text-lg p-8 lg:text-sm bg-white text-black border rounded-lg overflow-hidden shadow-lg">
