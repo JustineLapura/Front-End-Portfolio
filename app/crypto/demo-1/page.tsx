@@ -12,9 +12,11 @@ const page = () => {
           Book Appointment
         </button>
       </Link>
-      <button className="py-3 px-8 text-xl rounded-xl  bg-black font-bold text-white duration-200 hover:scale-105">
-        Log in as Admin
-      </button>
+      <Link href="/crypto/demo-1/admin">
+        <button className="py-3 px-8 text-xl rounded-xl  bg-black font-bold text-white duration-200 hover:scale-105">
+          Log in as Admin
+        </button>
+      </Link>
     </div>
   );
 };

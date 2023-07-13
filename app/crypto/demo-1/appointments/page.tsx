@@ -227,12 +227,12 @@ const page = () => {
   };
 
   return (
-    <div>
+    <div className="h-full flex items-center pt-[450px] sm:pt-[480px] lg:pt-[50px]">
       <div className="p-4 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-5 items-center">
-          <div className="md:col-span-1 w-[75%] lg:h-[75%] m-auto">
+          <div className="md:col-span-1 w-[75%] md:w-[50%] lg:h-[75%] m-auto">
             <h1 className="text-center font-bold">Schedules:</h1>
-            <table className="h-full w-full table-fixed md:text-lg p-8 lg:text-sm bg-white text-black border rounded-lg overflow-hidden shadow-lg">
+            <table className="h-full w-full table-fixed md:text-lg p-8 lg:text-sm bg-white text-black border rounded-lg overflow-hidden shadow-xl">
               <thead className="bg-blue-900 text-white">
                 <tr>
                   <th>Day</th>
@@ -285,14 +285,14 @@ const page = () => {
               </tbody>
             </table>
           </div>
-          <div className=" md:col-span-1 text-center w-full sm:w-[75%] lg:w-full mx-auto">
+          <div className=" md:col-span-1 text-center w-full sm:w-[75%] md:w-[50%] lg:w-full mx-auto">
             <h5 className="my-3 animate_animated animate__fadeIn">
               Hi, Justine !..
             </h5>
             <h3 className="my-3 text-primary animate__animated animate__pulse animate__delay-2s animate__infinite animate__slow">
               Book your appointment now.
             </h3>
-            <form className="mx-auto border rounded-lg p-5 shadow-lg">
+            <form className="mx-auto border rounded-lg p-5 shadow-xl bg-white">
               <div className="relative mb-3">
                 {/* <img
                     className="absolute top-0 right-0"
@@ -365,9 +365,9 @@ const page = () => {
               </div>
             </form>
           </div>
-          <div className="md:col-span-1 w-full sm:w-[75%] lg:w-full max-h-[450px] m-auto ">
+          <div className="md:col-span-1 w-full sm:w-[75%] md:w-[50%] lg:w-full max-h-[450px] m-auto ">
             <h1 className="text-center font-bold">Services Offered:</h1>
-            <table className="w-full table-fixed md:text-lg p-8 lg:text-sm bg-white text-black border rounded-lg overflow-hidden shadow-lg">
+            <table className="w-full table-fixed md:text-lg p-8 lg:text-sm bg-white text-black border rounded-lg overflow-hidden shadow-xl">
               <thead className="bg-blue-900 text-white">
                 <tr>
                   <th>Service</th>

@@ -12,10 +12,16 @@ export const AppointmentProvider = ({ children }) => {
   const [isInvalidDate, setIsInvalidDate] = useState(false);
   const [isInvalidTime, setIsInvalidTime] = useState(false);
   const [appointments, setAppointments] = useState(() => {
-    const storedAppointments = localStorage.getItem("appointments");
+    let storedAppointments = null;
+
+    if (typeof window !== "undefined") {
+      storedAppointments = localStorage.getItem("appointments");
+    }
+
     return storedAppointments
       ? JSON.parse(storedAppointments)
       : [
+          // Initial appointments data...
           {
             id: nanoid(),
             name: "John Smith",
@@ -43,10 +49,13 @@ export const AppointmentProvider = ({ children }) => {
         ];
   });
 
-  //   save appointments to localStorage
+  // Save appointments to localStorage
   useEffect(() => {
-    localStorage.setItem("appointments", JSON.stringify(appointments));
+    if (typeof window !== "undefined") {
+      localStorage.setItem("appointments", JSON.stringify(appointments));
+    }
   }, [appointments]);
+
 
   const handleBookAppointment = (e) => {
     e.preventDefault();

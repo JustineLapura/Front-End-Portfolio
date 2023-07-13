@@ -20,11 +20,16 @@ export const ServiceProvider = ({ children }) => {
 
   // Define state for existing services
   const [services, setServices] = useState(() => {
-    // Get services from localStorage or use default values
-    const storedServices = localStorage.getItem("services");
+    let storedServices = null;
+
+    if (typeof window !== 'undefined') {
+      storedServices = localStorage.getItem('services');
+    }
+
     return storedServices
       ? JSON.parse(storedServices)
       : [
+          // Default services data...
           {
             id: "first",
             name: "Tooth Extraction",
@@ -42,7 +47,9 @@ export const ServiceProvider = ({ children }) => {
 
   // Save services to localStorage whenever it changes
   useEffect(() => {
-    localStorage.setItem("services", JSON.stringify(services));
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('services', JSON.stringify(services));
+    }
   }, [services]);
 
   // Define function to add a new service

@@ -10,8 +10,10 @@ const layout = ({ children }: { children: React.ReactNode }) => {
       <AppointmentProvider>
         <TimeScheduleProvider>
           <ServiceProvider>
-            <Navbar />
-            {children}
+            <div className="h-full">
+              <Navbar />
+              {children}
+            </div>
           </ServiceProvider>
         </TimeScheduleProvider>
       </AppointmentProvider>
