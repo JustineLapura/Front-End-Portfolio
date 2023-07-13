@@ -2,6 +2,8 @@
 import React, { useContext } from "react";
 import { AppointmentContext } from "@/context/DentalClinicContext/AppointmentContext";
 import { nanoid } from 'nanoid';
+import TimeScheduleContext from "@/context/DentalClinicContext/TimeScheduleContext";
+import ServicesContext from "@/context/DentalClinicContext/ServicesContext";
 
 type AppointmentType = {
   id: string;
@@ -14,6 +16,8 @@ type AppointmentType = {
 
 
 const page = () => {
+  const { schedule } = useContext(TimeScheduleContext)
+  const { services } = useContext(ServicesContext)
   const {
     date,
     time,
@@ -58,6 +62,8 @@ const page = () => {
   //     setErrorMessage("Please fill the form correctly!");
   //   }
   // };
+
+  
 
 
 
