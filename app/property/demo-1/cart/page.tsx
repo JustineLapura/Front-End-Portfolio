@@ -40,6 +40,7 @@ const page = () => {
           if (orders[order.id] !== 0) {
             return (
               <div
+                key={order.id}
                 className={`h-[200px] w-[300px] md:w-[500px] mx-auto border border-gray-400 shadow-lg p-5 rounded-lg ${
                   mode === "dark" ? "text-white" : ""
                 }`}
