@@ -5,7 +5,7 @@ import { nanoid } from "nanoid";
 import TimeScheduleContext from "@/context/DentalClinicContext/TimeScheduleContext";
 import ServicesContext from "@/context/DentalClinicContext/ServicesContext";
 
-type AppointmentType = {
+export type AppointmentType = {
   id: string;
   name: string;
   date: string;
@@ -15,13 +15,13 @@ type AppointmentType = {
 };
 
 
-type ScheduleType = {
+export type ScheduleType = {
   day: string;
   startTime: string;
   endTime: string;
 };
 
-type ServiceType = {
+export type ServiceType = {
   id: number;
   name: string;
   description: string;
@@ -46,6 +46,7 @@ const page = () => {
     appointments,
     setAppointments,
     handleServiceChange,
+    setService
   } = useContext(AppointmentContext);
 
   const handleBookAppointment = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -70,6 +71,9 @@ const page = () => {
       const updatedAppointments = [newAppointment, ...appointments];
 
       setAppointments(updatedAppointments);
+      setDate("")
+      setTime("")
+      setService("")
       setErrorMessage(null);
     } else {
       setErrorMessage("Please fill the form correctly!");
@@ -230,7 +234,7 @@ const page = () => {
     <div className="h-full flex items-center pt-[450px] sm:pt-[480px] lg:pt-[50px]">
       <div className="p-4 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-5 items-center">
-          <div className="md:col-span-1 w-[75%] md:w-[50%] lg:h-[75%] m-auto">
+          <div className="md:col-span-1 w-[75%] md:w-[50%] lg:w-full lg:h-[75%] m-auto">
             <h1 className="text-center font-bold">Schedules:</h1>
             <table className="h-full w-full table-fixed md:text-lg p-8 lg:text-sm bg-white text-black border rounded-lg overflow-hidden shadow-xl">
               <thead className="bg-blue-900 text-white">
@@ -353,10 +357,10 @@ const page = () => {
                   })}
                 </select>
               </div>
-              {/* <h6 className="mx-auto mt-2 text-red-500">Error messge</h6> */}
+              {errorMessage && <h6 className="mx-auto mt-2 text-red-500">{errorMessage}</h6>} 
               <div className="py-3">
                 <button
-                  // onClick={handleBookAppointment}
+                  onClick={handleBookAppointment}
                   className="btn-sm font-bold bg-red-500 text-white py-2 px-4 rounded-lg"
                   type="submit"
                 >

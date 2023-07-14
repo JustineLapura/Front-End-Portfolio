@@ -45,7 +45,7 @@ export const AppointmentProvider = ({ children }) => {
             time: "9:30 AM",
             service: "Filling",
             status: "Cancelled",
-          },
+          }
         ];
   });
 
@@ -116,7 +116,8 @@ export const AppointmentProvider = ({ children }) => {
         setErrorMessage,
         appointments,
         setAppointments,
-        handleServiceChange
+        handleServiceChange,
+        setService
       }}
     >
       {children}
