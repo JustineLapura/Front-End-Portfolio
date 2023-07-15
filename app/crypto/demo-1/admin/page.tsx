@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useContext } from "react";
 import { AppointmentContext } from "@/context/DentalClinicContext/AppointmentContext";
 import { AppointmentType } from "../appointments/page";
@@ -7,11 +7,14 @@ const page = () => {
   const { appointments, setAppointments } = useContext(AppointmentContext);
   return (
     <div className="h-screen w-full text-gray-900 pt-[100px]">
-      <div className="p-4 flex justify-center">
-        <h1 className="text-3xl">Users</h1>
+      <div className="flex justify-center pt-4">
+        <h1 className="text-xl md:text-2xl lg:text-3xl font-bold">Appointments</h1>
       </div>
-      <div className="px-3 py-4 flex justify-center">
-        <div className="w-[350px] sm:w-full max-w-4xl">
+      <div className="h-full px-3 lg:flex items-center gap-10">
+        <div className="w-full h-[50%] lg:w-1/5 lg:ml-36 border bg-gray-200 rounded-lg flex justify-center items-center">
+          <div className="w-[350px] sm:w-[500px] lg:w-full mx-auto bg-blue-200 rounded-lg">Filter</div>
+        </div>
+        <div className="w-[350px] sm:w-full lg:w-4/5 max-w-4xl mx-auto">
           <div className="overflow-x-auto">
             <table className="w-full text-md bg-gray-100 shadow-xl rounded mb-4 p-6">
               <thead>

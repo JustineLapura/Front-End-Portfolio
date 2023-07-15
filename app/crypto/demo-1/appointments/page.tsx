@@ -4,6 +4,7 @@ import { AppointmentContext } from "@/context/DentalClinicContext/AppointmentCon
 import { nanoid } from "nanoid";
 import TimeScheduleContext from "@/context/DentalClinicContext/TimeScheduleContext";
 import ServicesContext from "@/context/DentalClinicContext/ServicesContext";
+import Link from "next/link";
 
 export type AppointmentType = {
   id: string;
@@ -13,7 +14,6 @@ export type AppointmentType = {
   service: string;
   status: string;
 };
-
 
 export type ScheduleType = {
   day: string;
@@ -46,34 +46,45 @@ const page = () => {
     appointments,
     setAppointments,
     handleServiceChange,
-    setService
+    setService,
   } = useContext(AppointmentContext);
 
   const handleBookAppointment = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
 
     // Check if the selected date and time already exist in the appointments array
-    const isDuplicate = appointments.some((appointment:AppointmentType) => appointment.date === date && appointment.time === time);
+    const isDuplicate = appointments.some(
+      (appointment: AppointmentType) =>
+        appointment.date === date && appointment.time === time
+    );
 
     if (isDuplicate) {
-      setErrorMessage("This appointment date and time is already taken. Please choose a different date and time.");
-    } else if (date !== "" && time !== "" && service !== "" && !isInvalidDate && !isInvalidTime) {
+      setErrorMessage(
+        "This appointment date and time is already taken. Please choose a different date and time."
+      );
+    } else if (
+      date !== "" &&
+      time !== "" &&
+      service !== "" &&
+      !isInvalidDate &&
+      !isInvalidTime
+    ) {
       const newAppointment = {
         id: nanoid(),
         name: "User",
         date,
         time,
         status: "Pending",
-        service
+        service,
       };
 
       // Update only the new appointment status to "Pending" and keep the existing appointments' statuses intact
       const updatedAppointments = [newAppointment, ...appointments];
 
       setAppointments(updatedAppointments);
-      setDate("")
-      setTime("")
-      setService("")
+      setDate("");
+      setTime("");
+      setService("");
       setErrorMessage(null);
     } else {
       setErrorMessage("Please fill the form correctly!");
@@ -231,7 +242,12 @@ const page = () => {
   };
 
   return (
-    <div className="h-full flex items-center pt-[450px] sm:pt-[480px] lg:pt-[50px]">
+    <div className="relative h-full flex items-center pt-[450px] sm:pt-[480px] lg:pt-[50px]">
+      <Link href="/crypto/demo-1/appointments/my-appointments">
+        <button className="absolute right-2 top-[100px] py-4 px-6 rounded-lg bg-red-500 hover:bg-red-400 border-none text-sm text-white font-bold hover:shadow-xl">
+          My Appointments
+        </button>
+      </Link>
       <div className="p-4 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-5 items-center">
           <div className="md:col-span-1 w-[75%] md:w-[50%] lg:w-full lg:h-[75%] m-auto">
@@ -357,7 +373,9 @@ const page = () => {
                   })}
                 </select>
               </div>
-              {errorMessage && <h6 className="mx-auto mt-2 text-red-500">{errorMessage}</h6>} 
+              {errorMessage && (
+                <h6 className="mx-auto mt-2 text-red-500">{errorMessage}</h6>
+              )}
               <div className="py-3">
                 <button
                   onClick={handleBookAppointment}

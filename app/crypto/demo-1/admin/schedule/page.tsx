@@ -25,9 +25,9 @@ const page = () => {
 
           return (
             <div className="flex items-center my-2" key={index}>
-              <label className="w-20 font-bold">{day}</label>
+              <label className="w-20 md:w-30 text-sm sm:text-md font-bold">{day}</label>
               <input
-                className="w-28 sm:w-36 text-center text-lg border border-gray-300 rounded py-1 px-2"
+                className="w-28 ml-4 sm:w-36 text-center text-lg border border-gray-300 rounded py-1 px-2"
                 type="time"
                 value={startTime}
                 onChange={(e) =>
