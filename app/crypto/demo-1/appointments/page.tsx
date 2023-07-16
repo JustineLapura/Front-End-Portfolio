@@ -242,14 +242,14 @@ const page = () => {
   };
 
   return (
-    <div className="relative h-full flex items-center pt-[450px] sm:pt-[480px] lg:pt-[50px]">
+    <div className="relative h-full w-full flex items-center pt-20 lg:pt-[100px]">
       <Link href="/crypto/demo-1/appointments/my-appointments">
-        <button className="absolute right-2 top-[100px] py-4 px-6 rounded-lg bg-red-500 hover:bg-red-400 border-none text-sm text-white font-bold hover:shadow-xl">
-          My Appointments
+        <button className="absolute right-4 top-[100px] py-2 px-4 rounded-lg bg-blue-500 hover:bg-blue-800 border-none text-sm text-white font-bold hover:shadow-xl">
+          Goto My Appointments
         </button>
       </Link>
-      <div className="p-4 mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-5 items-center">
+      <div className="h-full p-4 mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-20 lg:m-auto items-center">
           <div className="md:col-span-1 w-[75%] md:w-[50%] lg:w-full lg:h-[75%] m-auto">
             <h1 className="text-center font-bold">Schedules:</h1>
             <table className="h-full w-full table-fixed md:text-lg p-8 lg:text-sm bg-white text-black border rounded-lg overflow-hidden shadow-xl">

@@ -11,13 +11,13 @@ const page = () => {
     (appointment: AppointmentType) => appointment.name === "User"
   );
   return (
-    <div className="relative pt-24 flex flex-col gap-8 justify-center items-center">
+    <div className="relative flex flex-col gap-8 justify-center items-center">
       <Link href="/crypto/demo-1/appointments">
-        <button className="absolute left-2 top-[100px] py-4 px-6 rounded-lg bg-red-500 hover:bg-red-400 border-none text-sm text-white font-bold hover:shadow-xl">
-          My Appointments
+        <button className="absolute left-4 top-[100px] py-2 px-4 rounded-lg bg-blue-500 hover:bg-blue-800 border-none text-sm text-white font-bold hover:shadow-xl">
+          Go back
         </button>
       </Link>
-      <h3 className="text-xl md:text-2xl font-bold pt-6">My Appointments</h3>
+      <h3 className="text-xl md:text-2xl font-bold pt-36">My Appointments</h3>
       <div className="w-full max-w-4xl mx-auto py-4 px-6">
         <div className="overflow-x-auto">
           <table className="w-full text-md bg-gray-100 shadow-xl rounded mb-4 p-6">
