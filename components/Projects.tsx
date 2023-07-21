@@ -4,6 +4,7 @@ import orderingImg from "/public/ordering.jpg"
 import cryptoImg from "/public/crypto.jpg"
 import twitchImg from "/public/twitch.jpg"
 import netflixImg from "/public/netflix.jpg"
+import dentalImg from "/public/DentalClinic.jpg"
 import Link from 'next/link'
 import ProjectItem from './ProjectItem'
 
@@ -14,8 +15,8 @@ const projects = [
     url: "/property"
   },
   {
-    title: "Crypto App",
-    img: cryptoImg,
+    title: "Dental Clinic",
+    img: dentalImg,
     url: "/crypto"
   },
   {
