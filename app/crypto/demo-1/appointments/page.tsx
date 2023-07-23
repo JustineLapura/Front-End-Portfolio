@@ -28,7 +28,7 @@ export type ServiceType = {
   price: number;
 };
 
-const page = () => {
+const Page = () => {
   const { schedule } = useContext(TimeScheduleContext);
   const { services } = useContext(ServicesContext);
   const {
@@ -412,4 +412,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

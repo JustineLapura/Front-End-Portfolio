@@ -13,7 +13,7 @@ interface FilteredAppointment {
   }
 }
 
-const page = () => {
+const Page = () => {
   const { appointments, setAppointments } = useContext(AppointmentContext);
   const [filteredAppointments, setFilteredAppointments] = useState([]);
   const [dateRange, setDateRange] = useState({ startDate: "", endDate: "" });
@@ -157,4 +157,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

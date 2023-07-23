@@ -9,7 +9,7 @@ type ServicesType = {
   price: number;
 };
 
-const page = () => {
+const Page = () => {
   const { services } = useContext(ServicesContext);
   return (
     <div className="relative flex flex-col gap-8 justify-center items-center">
@@ -58,4 +58,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import React from "react";
 
-const page = () => {
+const Page = () => {
   return (
     <div className="">
       <div className="flex justify-center items-center h-screen">
@@ -32,4 +32,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

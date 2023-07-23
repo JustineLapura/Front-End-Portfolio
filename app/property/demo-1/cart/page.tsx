@@ -15,7 +15,7 @@ type OrderType = {
   price: number;
 };
 
-const page = () => {
+const Page = () => {
   const { mode } = useContext(ThemeContext);
   const {
     orders,
@@ -103,4 +103,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

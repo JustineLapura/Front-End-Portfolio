@@ -2,7 +2,7 @@ import Project from "@/components/Project";
 import React from "react";
 import netflixImg from "/public/netflix.jpg";
 
-const page = () => {
+const Page = () => {
   return (
     <>
       <Project
@@ -22,4 +22,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { TimeScheduleContext } from "@/context/DentalClinicContext/TimeScheduleContext";
 import { ScheduleType } from "../../appointments/page";
 
-const page = () => {
+const Page = () => {
   const { schedule, handleScheduleUpdate, handleDayClosed } =
     useContext(TimeScheduleContext);
   return (
@@ -59,4 +59,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

@@ -5,7 +5,7 @@ import React from "react";
 import dentist from "@/public/DentalClinicImgs/Dentist.gif";
 import dentalChair from "@/public/DentalClinicImgs/dentalChair.gif";
 
-const page = () => {
+const Page = () => {
   return (
     <div className="flex flex-col md:flex-row gap-4 h-full w-full justify-evenly items-center px-4">
       <div className="mt-8 md:mt-0 flex flex-col gap-4 text-sm md:text-md lg:text-xl">
@@ -29,4 +29,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

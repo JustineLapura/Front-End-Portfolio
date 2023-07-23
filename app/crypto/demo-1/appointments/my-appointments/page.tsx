@@ -4,7 +4,7 @@ import React, { useContext } from "react";
 import { AppointmentType } from "../page";
 import Link from "next/link";
 
-const page = () => {
+const Page = () => {
   const { appointments } = useContext(AppointmentContext);
 
   const displayedAppointments = appointments.filter(
@@ -80,4 +80,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

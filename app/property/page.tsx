@@ -3,7 +3,7 @@ import React from "react";
 import orderingImg from "/public/ordering.jpg";
 import Project from "@/components/Project";
 
-const page = () => {
+const Page = () => {
   return (
     <>
       <Project
@@ -22,4 +22,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
