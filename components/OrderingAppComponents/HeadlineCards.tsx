@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import foodOne from "/public/OrderingAppImgs/food1.jpg";
-import foodstrip from "/public/OrderingAppImgs/foodstrip.jpg";
-import dessert from "/public/OrderingAppImgs/dessert.jpg";
+import foodOne from "/OrderingAppImgs/food1.jpg";
+import foodstrip from "/OrderingAppImgs/foodstrip.jpg";
+import dessert from "/OrderingAppImgs/dessert.jpg";
 
 const HeadlineCards = () => {
   return (
