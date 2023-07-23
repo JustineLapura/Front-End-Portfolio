@@ -1,45 +1,45 @@
-import Image from 'next/image';
-import React from 'react';
-import orderingImg from '/public/ordering.jpg';
-import cryptoImg from '/public/crypto.jpg';
-import twitchImg from '/public/twitch.jpg';
-import netflixImg from '/public/netflix.jpg';
-import dentalImg from '/public/DentalClinic.jpg';
-import Link from 'next/link';
-import ProjectItem from './ProjectItem';
+import Image from "next/image";
+import React from "react";
+import orderingImg from "/public/ordering.jpg";
+import cryptoImg from "/public/crypto.jpg";
+import twitchImg from "/public/twitch.jpg";
+import netflixImg from "/public/netflix.jpg";
+import dentalImg from "/public/DentalClinic.jpg";
+import Link from "next/link";
+import ProjectItem from "./ProjectItem";
 
 const projects = [
   {
-    title: 'Food Ordering App',
+    title: "Food Ordering App",
     img: orderingImg,
-    url: '/property',
+    url: "/property",
   },
   {
-    title: 'Dental Clinic',
+    title: "Dental Clinic",
     img: dentalImg,
-    url: '/crypto',
+    url: "/crypto",
   },
   {
-    title: 'Netflix App',
+    title: "Netflix App",
     img: netflixImg,
-    url: '/netflix',
+    url: "/netflix",
   },
   {
-    title: 'Twitch App',
+    title: "Twitch App",
     img: twitchImg,
-    url: '/twitch',
+    url: "/twitch",
   },
 ];
 
 const Projects = () => {
   return (
-    <div id='projects' className='w-full px-4'>
-      <div className='max-w-[1240px] mx-auto py-16'>
-        <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
-          Projects &rsquo; What I've Built
+    <div id="projects" className="w-full px-4">
+      <div className="max-w-[1240px] mx-auto py-16">
+        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
+          Projects &rsquo; What I&apos;ve Built
         </p>
-        <h2 className='text-2xl py-4 font-bold'>What I've Built</h2>
-        <div className='grid md:grid-cols-2 gap-8'>
+        <h2 className="text-2xl py-4 font-bold">What I&apos;ve Built</h2>
+        <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project) => (
             <ProjectItem
               key={project.title}
@@ -55,7 +55,6 @@ const Projects = () => {
 };
 
 export default Projects;
-
 
 // import Image from 'next/image';
 // import React from 'react';
