@@ -1,5 +1,5 @@
-"use client"
-import React, { createContext, useState, useEffect } from 'react';
+"use client";
+import React, { createContext, useState, useEffect } from "react";
 
 export const TimeScheduleContext = createContext();
 
@@ -7,24 +7,34 @@ export const TimeScheduleProvider = ({ children }) => {
   const [schedule, setSchedule] = useState(() => {
     let storedSchedule = null;
 
-    if (typeof window !== 'undefined') {
-      storedSchedule = localStorage.getItem('schedule');
+    if (typeof window !== "undefined") {
+      storedSchedule = localStorage.getItem("schedule");
     }
 
-    return storedSchedule ? JSON.parse(storedSchedule) : [];
+    return storedSchedule
+      ? JSON.parse(storedSchedule)
+      : [
+          { day: "Monday", startTime: "09:00 AM", endTime: "05:00 PM" },
+          { day: "Tuesday", startTime: "09:00 AM", endTime: "05:00 PM" },
+          { day: "Wednesday", startTime: "09:00 AM", endTime: "05:00 PM" },
+          { day: "Thursday", startTime: "09:00 AM", endTime: "05:00 PM" },
+          { day: "Friday", startTime: "09:00 AM", endTime: "05:00 PM" },
+          { day: "Saturday", startTime: "09:00 AM", endTime: "12:00 PM" },
+          { day: "Sunday", startTime: "Closed", endTime: "Closed" },
+        ];
   });
 
   // Save schedule to localStorage whenever it changes
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('schedule', JSON.stringify(schedule));
+    if (typeof window !== "undefined") {
+      localStorage.setItem("schedule", JSON.stringify(schedule));
     }
   }, [schedule]);
 
   // Function to handle schedule updates
   const handleScheduleUpdate = (day, startTime, endTime) => {
     const updatedSchedule = [...schedule];
-    const dayIndex = updatedSchedule.findIndex(item => item.day === day);
+    const dayIndex = updatedSchedule.findIndex((item) => item.day === day);
 
     if (dayIndex !== -1) {
       updatedSchedule[dayIndex] = { day, startTime, endTime };
@@ -37,7 +47,7 @@ export const TimeScheduleProvider = ({ children }) => {
 
   // Function to handle setting a specific day as closed
   const handleDayClosed = (day) => {
-    const updatedSchedule = schedule.filter(item => item.day !== day);
+    const updatedSchedule = schedule.filter((item) => item.day !== day);
     setSchedule(updatedSchedule);
   };
 
@@ -47,7 +57,7 @@ export const TimeScheduleProvider = ({ children }) => {
         schedule,
         setSchedule,
         handleScheduleUpdate,
-        handleDayClosed
+        handleDayClosed,
       }}
     >
       {children}
