@@ -36,7 +36,7 @@ const Projects = () => {
     <div id="projects" className="w-full px-4">
       <div className="max-w-[1240px] mx-auto py-16">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
-          Projects &rsquo; What I&apos;ve Built
+          Projects
         </p>
         <h2 className="text-2xl py-4 font-bold">What I&apos;ve Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
