@@ -15,20 +15,16 @@ const About = () => {
           </p>
           <h2 className="text-3xl font-bold py-4">Who I Am</h2>
           <p className="py-2 text-gray-600">
-            As a Bachelor of Science in Information Technology graduate with a
-            passion for web development and a background in programming
-            languages such as C language, VB.NET, and Python, I have developed a
-            strong foundation in software development. However, my true love
-            lies in web development, where I have honed my skills and expertise.
+            Hey there! I'm Justine, a passionate web developer with a
+            Bachelor of Science in Information Technology. I love crafting
+            user-friendly websites using HTML, CSS, and JavaScript. I've also
+            mastered popular frameworks like React.js and Next.js to create
+            dynamic web applications.
           </p>
           <p className="py-2 text-gray-600">
-            I have dedicated my time and efforts to mastering various web
-            technologies, frameworks, and languages to create exceptional user
-            experiences and functional web applications. Through my projects, I
-            have gained experience in HTML, CSS, JavaScript, and popular
-            frameworks such as React.js and Next.js. I am proficient in building
-            responsive and visually appealing websites that prioritize
-            user-friendly interfaces and intuitive navigation.
+            Check out some of my latest projects below, and let's build the
+            future of the web together! Feel free to get in touch—I'm always
+            excited to collaborate on new opportunities.
           </p>
           <Link href="/#projects">
             <p className="py-2 text-gray-600 cursor-pointer underline ">
@@ -36,7 +32,7 @@ const About = () => {
             </p>
           </Link>
         </div>
-        <div className="w-full h-auto m-auto shadow-xl shadow-grady-400 rounded-xl flex justify-center items-center p-4 hover:scale-105 ease-in duration-300 cursor-pointer">
+        <div className="w-full h-auto m-auto rounded-xl flex justify-center items-center p-4 hover:scale-105 ease-in duration-300 cursor-pointer">
           <Link href="https://www.facebook.com/justine.lapura.5">
             <Image
               className="rounded-xl"

@@ -13,7 +13,7 @@ const Page = () => {
   const { services } = useContext(ServicesContext);
   return (
     <div className="relative flex flex-col gap-8 justify-center items-center">
-      <h3 className="text-xl md:text-2xl font-bold pt-36">My Appointments</h3>
+      <h3 className="text-xl md:text-2xl font-bold pt-36">Services</h3>
       <div className="md:w-[800px] lg:w-[1000px] xl:w-full max-w-4xl mx-auto py-4 px-6">
         <div className="overflow-x-auto">
           <table className="w-full text-md bg-gray-100 shadow-lg rounded mb-4 p-6">

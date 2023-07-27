@@ -19,17 +19,17 @@ const Main = () => {
                 I am an aspiring junior front-end developer with a passion for web development. I have a solid foundation in HTML, CSS, JavaScript, React js, Next.js, Tailwind CSS, and TypeScript.
                 I enjoy creating user-friendly and visually appealing web interfaces. I believe in writing clean and maintainable code to deliver high-quality products.
             </p>
-            <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
+            <div className="flex items-center justify-between text-gray-700 max-w-[330px] m-auto py-4">
+                <div className="rounded-full text-xl cursor-pointer hover:text-[#5651e5] hover:scale-110 ease-in duration-200">
                     <FaLinkedinIn/>
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
+                <div className="rounded-full text-xl cursor-pointer hover:text-[#5651e5] hover:scale-110 ease-in duration-200">
                     <FaGithub/>
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
+                <div className="rounded-full text-xl cursor-pointer hover:text-[#5651e5] hover:scale-110 ease-in duration-200">
                     <AiOutlineMail/>
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-500">
+                <div className="rounded-full text-xl cursor-pointer hover:text-[#5651e5] hover:scale-110 ease-in duration-200">
                     <BsFillPersonLinesFill/>
                 </div>
             </div>
@@ -64,16 +64,16 @@ export default Main;
 //                 I enjoy creating user-friendly and visually appealing web interfaces. I believe in writing clean and maintainable code to deliver high-quality products.
 //             </p>
 //             <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-//                 <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
+//                 <div className="rounded-full border border-gray-500 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
 //                     <FaLinkedinIn/>
 //                 </div>
-//                 <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
+//                 <div className="rounded-full border border-gray-500 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
 //                     <FaGithub/>
 //                 </div>
-//                 <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
+//                 <div className="rounded-full border border-gray-500 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
 //                     <AiOutlineMail/>
 //                 </div>
-//                 <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-500">
+//                 <div className="rounded-full border border-gray-500 p-4 cursor-pointer hover:scale-110 ease-in duration-500">
 //                     <BsFillPersonLinesFill/>
 //                 </div>
 //             </div>

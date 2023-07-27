@@ -6,26 +6,38 @@ type ProjectType = {
   title: string;
   img: StaticImageData;
   url: string;
+  framework: string;
 };
 
-const ProjectItem = ({ title, img, url }: ProjectType) => {
+const ProjectItem = ({ title, img, url, framework }: ProjectType) => {
   return (
-    <div className="group relative h-[400px] w-full transform overflow-hidden rounded-xl border p-4 shadow-xl duration-300 hover:bg-black/60">
-      <Image
-        className="h-full w-full rounded-xl group-hover:scale-110 duration-300 border object-cover object-center group-hover:mix-blend-overlay"
-        src={img}
-        alt="property"
-      />
-      <div className="absolute inset-0 hidden flex-col items-center justify-center gap-4 group-hover:flex">
-        <h1 className="text-2xl font-bold text-white">{title}</h1>
-        <p className="font-semibold text-white">Next.Js</p>
-        <Link href={url}>
-          <p className="text-center py-3 px-10 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
-            More Info
-          </p>
-        </Link>
+    <Link href={url}>
+      <div className="group relative h-[400px] w-full transform transition overflow-hidden rounded-xl duration-300 hover:bg-gradient-to-t from-black/60">
+        <Image
+          className="h-full w-full rounded-xl object-contain object-center group-hover:mix-blend-overlay"
+          src={img}
+          alt="property"
+        />
+        <div className="absolute left-[10%] bottom-[10%] hidden items-center justify-center duration-200 ease-in transition transform gap-4 group-hover:flex">
+          <h1 className="text-2xl font-bold text-white">{title}</h1>
+          <p className=" text-white">{framework}</p>
+        </div>
       </div>
-    </div>
+    </Link>
+
+    // <Link href={url}>
+    //   <div className="group relative h-[400px] w-full transform transition overflow-hidden rounded-xl duration-300 hover:bg-gradient-to-t from-black/60">
+    //     <Image
+    //       className="h-full w-full rounded-xl object-contain object-center group-hover:mix-blend-overlay"
+    //       src={img}
+    //       alt="property"
+    //     />
+    //     <div className="absolute left-[10%] bottom-[10%] hidden items-center justify-center duration-200 ease-in transition transform gap-4 group-hover:flex">
+    //       <h1 className="text-2xl font-bold text-white">{title}</h1>
+    //       <p className="font-semibold text-white">Next.Js</p>
+    //     </div>
+    //   </div>
+    // </Link>
   );
 };
 

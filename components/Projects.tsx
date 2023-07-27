@@ -13,21 +13,25 @@ const projects = [
     title: "Food Ordering App",
     img: orderingImg,
     url: "/property",
+    framework: 'Next js'
   },
   {
     title: "Dental Clinic",
     img: dentalImg,
     url: "/crypto",
+    framework: 'React js'
   },
   {
     title: "Netflix App",
     img: netflixImg,
     url: "/netflix",
+    framework: 'Next js'
   },
   {
     title: "Twitch App",
     img: twitchImg,
     url: "/twitch",
+    framework: 'Next js'
   },
 ];
 
@@ -46,6 +50,7 @@ const Projects = () => {
               title={project.title}
               img={project.img}
               url={project.url}
+              framework={project.framework}
             />
           ))}
         </div>

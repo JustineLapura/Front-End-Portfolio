@@ -14,15 +14,17 @@ export const TimeScheduleProvider = ({ children }) => {
     return storedSchedule
       ? JSON.parse(storedSchedule)
       : [
-          { day: "Monday", startTime: "09:00 AM", endTime: "05:00 PM" },
-          { day: "Tuesday", startTime: "09:00 AM", endTime: "05:00 PM" },
-          { day: "Wednesday", startTime: "09:00 AM", endTime: "05:00 PM" },
-          { day: "Thursday", startTime: "09:00 AM", endTime: "05:00 PM" },
-          { day: "Friday", startTime: "09:00 AM", endTime: "05:00 PM" },
-          { day: "Saturday", startTime: "09:00 AM", endTime: "12:00 PM" },
+          { day: "Monday", startTime: "09:00", endTime: "17:00" },
+          { day: "Tuesday", startTime: "09:00", endTime: "17:00" },
+          { day: "Wednesday", startTime: "09:00", endTime: "17:00" },
+          { day: "Thursday", startTime: "09:00", endTime: "17:00" },
+          { day: "Friday", startTime: "09:00", endTime: "17:00" },
+          { day: "Saturday", startTime: "09:00", endTime: "22:00" },
           { day: "Sunday", startTime: "Closed", endTime: "Closed" },
         ];
   });
+
+  console.log(schedule)
 
   // Save schedule to localStorage whenever it changes
   useEffect(() => {

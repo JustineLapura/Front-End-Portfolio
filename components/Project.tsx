@@ -42,15 +42,15 @@ const Project = ({
           <h2 className="text-2xl font-bold">Overview</h2>
           <p>{overview}</p>
           <Link href={url}>
-          <button className="bg-[#6561e5] rounded-lg mt-2 text-white px-6 py-1 mr-6 shadow-xl shadow-gray-400">
+          <button className="bg-[#6561e5] rounded-lg mt-2 text-white px-6 py-1 mr-6">
             DEMO
           </button>
           </Link>
-          <button className="bg-[#6561e5] rounded-lg mt-2 text-white px-6 py-1 shadow-xl shadow-gray-400">
+          <button className="bg-[#6561e5] rounded-lg mt-2 text-white px-6 py-1">
             CODE
           </button>
         </div>
-        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
+        <div className="col-span-4 md:col-span-1 rounded-xl p-4">
           <div className="p-2">
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid  grid-cols-3 md:grid-cols-1">

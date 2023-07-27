@@ -17,7 +17,7 @@ const Contact = () => {
         <h2 className="py-4 font-bold text-2xl">Get in Touch</h2>
         <div className="grid lg:grid-cols-5 gap-8">
           {/* left */}
-          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
+          <div className="col-span-3 lg:col-span-2 w-full h-full rounded-xl p-4">
             <div className="lg:p-4 h-full">
               <div className="">
                 <Image
@@ -37,16 +37,16 @@ const Contact = () => {
               <div className="">
                 <p className="text-xl uppercase pt-8">Connect with me</p>
                 <div className="flex items-center justify-between py-4">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
+                  <div className="rounded-full p-5 cursor-pointer hover:text-[#5651e5] hover:scale-110 ease-in duration-500">
                     <FaLinkedinIn />
                   </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
+                  <div className="rounded-full p-5 cursor-pointer hover:text-[#5651e5] hover:scale-110 ease-in duration-500">
                     <FaGithub />
                   </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
+                  <div className="rounded-full p-5 cursor-pointer hover:text-[#5651e5] hover:scale-110 ease-in duration-500">
                     <AiOutlineMail />
                   </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-500">
+                  <div className="rounded-full p-4 cursor-pointer hover:text-[#5651e5] hover:scale-110 ease-in duration-500">
                     <BsFillPersonLinesFill />
                   </div>
                 </div>
@@ -54,7 +54,7 @@ const Contact = () => {
             </div>
           </div>
           {/* right */}
-          <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
+          <div className="col-span-3 w-full h-auto rounded-xl lg:p-4">
             <div className="p-4">
               <form>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
@@ -105,7 +105,7 @@ const Contact = () => {
         </div>
         <div className="flex justify-center py-12">
           <Link href="/">
-            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-500">
+            <div className="rounded-full p-4 cursor-pointer hover:scale-110 ease-in duration-500">
             <HiOutlineChevronDoubleUp className="text-[#5651e5]" size={30} />
             </div>
           </Link>
@@ -138,7 +138,7 @@ export default Contact;
 //         <h2 className="py-4 font-bold text-2xl">Get in Touch</h2>
 //         <div className="grid lg:grid-cols-5 gap-8">
 //           {/* left */}
-//           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
+//           <div className="col-span-3 lg:col-span-2 w-full h-full rounded-xl p-4">
 //             <div className="lg:p-4 h-full">
 //               <div className="">
 //                 <Image
@@ -158,16 +158,16 @@ export default Contact;
 //               <div className="">
 //                 <p className="text-xl uppercase pt-8">Connect with me</p>
 //                 <div className="flex items-center justify-between py-4">
-//                   <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
+//                   <div className="rounded-full p-5 cursor-pointer hover:scale-110 ease-in duration-500">
 //                     <FaLinkedinIn />
 //                   </div>
-//                   <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
+//                   <div className="rounded-full p-5 cursor-pointer hover:scale-110 ease-in duration-500">
 //                     <FaGithub />
 //                   </div>
-//                   <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-500">
+//                   <div className="rounded-full p-5 cursor-pointer hover:scale-110 ease-in duration-500">
 //                     <AiOutlineMail />
 //                   </div>
-//                   <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-500">
+//                   <div className="rounded-full p-4 cursor-pointer hover:scale-110 ease-in duration-500">
 //                     <BsFillPersonLinesFill />
 //                   </div>
 //                 </div>
@@ -175,7 +175,7 @@ export default Contact;
 //             </div>
 //           </div>
 //           {/* right */}
-//           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
+//           <div className="col-span-3 w-full h-auto rounded-xl lg:p-4">
 //             <div className="p-4">
 //               <form>
 //                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
@@ -226,7 +226,7 @@ export default Contact;
 //         </div>
 //         <div className="flex justify-center py-12">
 //           <Link href="/">
-//             <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-500">
+//             <div className="rounded-full p-4 cursor-pointer hover:scale-110 ease-in duration-500">
 //               <HiOutlineChevronDoubleUp className="text-[#5651e5]" size={30} />
 //             </div>
 //           </Link>
