@@ -1,7 +1,8 @@
 import Link from "next/link";
-import React from "react";
 
 const Navbar = () => {
+
+
   return (
     <div className="bg-blue-900 fixed flex justify-between items-center shadow-lg px-4 h-[80px] w-full z-10">
       <div className="">

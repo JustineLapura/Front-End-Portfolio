@@ -49,6 +49,10 @@ const Page = () => {
     setService,
   } = useContext(AppointmentContext);
 
+  const displayedAppointments = appointments.filter(
+    (appointment: AppointmentType) => appointment.name === "User"
+  );
+
   const handleBookAppointment = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
 
@@ -243,16 +247,18 @@ const Page = () => {
 
   return (
     <div className="relative h-full w-full flex items-center pt-20 lg:pt-[100px]">
-      <Link href="/crypto/demo-1/appointments/my-appointments">
-        <button className="absolute right-4 top-[100px] py-2 px-4 rounded-lg bg-blue-500 hover:bg-blue-800 border-none text-sm text-white font-bold hover:shadow-xl">
-          Goto My Appointments
-        </button>
-      </Link>
+      {displayedAppointments.length > 0 && (
+        <Link href="/crypto/demo-1/appointments/my-appointments">
+          <button className="absolute right-4 top-[100px] py-2 px-4 rounded-lg bg-blue-500 hover:bg-blue-800 border-none text-sm text-white font-bold ">
+            Goto My Appointments
+          </button>
+        </Link>
+      )}
       <div className="h-full p-4 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-20 lg:m-auto items-center">
           <div className="md:col-span-1 w-[75%] md:w-[50%] lg:w-full lg:h-[75%] m-auto">
             <h1 className="text-center font-bold">Schedules:</h1>
-            <table className="h-full w-full table-fixed md:text-lg p-8 lg:text-sm bg-white text-black border rounded-lg overflow-hidden shadow-xl">
+            <table className="h-full w-full border table-fixed md:text-lg p-8 lg:text-sm bg-blue-50 text-black rounded-lg overflow-hidden ">
               <thead className="bg-blue-900 text-white">
                 <tr>
                   <th>Day</th>
@@ -312,7 +318,7 @@ const Page = () => {
             <h3 className="my-3 text-primary animate__animated animate__pulse animate__delay-2s animate__infinite animate__slow">
               Book your appointment now.
             </h3>
-            <form className="mx-auto border rounded-lg p-5 shadow-xl bg-white">
+            <form className="mx-auto border rounded-lg p-5  bg-blue-50">
               <div className="relative mb-3">
                 {/* <img
                     className="absolute top-0 right-0"
@@ -389,7 +395,7 @@ const Page = () => {
           </div>
           <div className="md:col-span-1 w-full sm:w-[75%] md:w-[50%] lg:w-full max-h-[450px] m-auto ">
             <h1 className="text-center font-bold">Services Offered:</h1>
-            <table className="w-full table-fixed md:text-lg p-8 lg:text-sm bg-white text-black border rounded-lg overflow-hidden shadow-xl">
+            <table className="w-full table-fixed md:text-lg p-8 lg:text-sm bg-blue-50 text-black border rounded-lg overflow-hidden ">
               <thead className="bg-blue-900 text-white">
                 <tr>
                   <th>Service</th>

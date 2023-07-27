@@ -1,22 +1,17 @@
 import Project from "@/components/Project";
 import React from "react";
-import cryptoImg from "/public/crypto.jpg";
+import DentalClinicImg from "/public/DentalClinic.jpg";
 
 const Page = () => {
   return (
     <>
       <Project
-        projectImg={cryptoImg}
-        title="Crypto App"
-        url="/crypto/demo-1"
-        overview="A crypto app, also known as a cryptocurrency app, is a software application designed to facilitate the buying, selling, storing, and managing of cryptocurrencies. These apps provide users with a user-friendly interface to interact with various digital currencies, such as Bitcoin, Ethereum, Litecoin, and many others."
-        technologies={[
-            "HTML", 
-            "CSS", 
-            "Javascript", 
-            "React", 
-            "Firebase"
-        ]}
+        projectImg={DentalClinicImg}
+        title="Dental Clinic App"
+        demoUrl="/crypto/demo-1"
+        codeUrl="https://github.com/JustineLapura/Dental-Clinic-Appointment-Reservation-System"
+        overview="This Dental Clinic system offers a user-friendly interface that allows dental professionals to efficiently manage various aspects of their practice. From appointment scheduling and patient records management to treatment planning, the Dental Clinic System provides a seamless platform for dentists and staff to deliver high-quality dental care."
+        technologies={["HTML", "CSS", "Javascript", "React"]}
       />
     </>
   );

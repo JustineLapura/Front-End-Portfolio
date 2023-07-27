@@ -7,7 +7,10 @@ import dentalChair from "@/public/DentalClinicImgs/dentalChair.gif";
 
 const Page = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-4 h-full w-full justify-evenly items-center px-4">
+    <div className="relative bg-blue-50 flex flex-col md:flex-row gap-4 h-full w-full justify-evenly items-center px-4">
+      <Link href="/crypto">
+          <p className="underline font-bold cursor-pointer absolute top-[100px] left-8">Back</p>
+        </Link>
       <div className="mt-8 md:mt-0 flex flex-col gap-4 text-sm md:text-md lg:text-xl">
         {/* login buttons */}
         <Link href="/crypto/demo-1/appointments">

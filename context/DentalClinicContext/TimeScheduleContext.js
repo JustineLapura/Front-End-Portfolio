@@ -19,8 +19,7 @@ export const TimeScheduleProvider = ({ children }) => {
           { day: "Wednesday", startTime: "09:00", endTime: "17:00" },
           { day: "Thursday", startTime: "09:00", endTime: "17:00" },
           { day: "Friday", startTime: "09:00", endTime: "17:00" },
-          { day: "Saturday", startTime: "09:00", endTime: "22:00" },
-          { day: "Sunday", startTime: "Closed", endTime: "Closed" },
+          { day: "Saturday", startTime: "09:00", endTime: "22:00" }
         ];
   });
 

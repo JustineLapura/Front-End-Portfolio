@@ -1,8 +1,10 @@
 import Link from "next/link";
 import React from "react";
-import { RxSketchLogo, RxDashboard, RxPerson } from "react-icons/rx";
-import { FiSettings } from "react-icons/fi";
+import { RxSketchLogo, RxDashboard } from "react-icons/rx";
+import { FiSettings, FiClock } from "react-icons/fi";
 import { HiOutlineShoppingBag } from "react-icons/hi";
+import { FaTooth } from "react-icons/fa";
+
 
 const Sidebar = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -26,7 +28,7 @@ const Sidebar = ({ children }: { children: React.ReactNode }) => {
           <Link href="/crypto/demo-1/admin/schedule">
             <div className="group w-full flex justify-between items-center gap-4 px-2 lg:hover:bg-gray-100">
               <div className="bg-gray-100 group-hover:bg-white hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block">
-                <RxPerson size={20} />
+                <FiClock size={20} />
               </div>
               <h1 className="hidden lg:block">Schedule</h1>
             </div>
@@ -34,7 +36,7 @@ const Sidebar = ({ children }: { children: React.ReactNode }) => {
           <Link href="/crypto/demo-1/admin/services">
             <div className="group w-full flex justify-between items-center gap-4 px-2 lg:hover:bg-gray-100">
               <div className="bg-gray-100 group-hover:bg-white hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block">
-                <HiOutlineShoppingBag size={20} />
+                <FaTooth size={20} />
               </div>
               <h1 className="hidden lg:block">Services</h1>
             </div>

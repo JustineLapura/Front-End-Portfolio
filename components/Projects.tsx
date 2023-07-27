@@ -16,7 +16,7 @@ const projects = [
     framework: 'Next js'
   },
   {
-    title: "Dental Clinic",
+    title: "Dental Clinic App",
     img: dentalImg,
     url: "/crypto",
     framework: 'React js'

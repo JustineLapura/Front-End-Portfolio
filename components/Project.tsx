@@ -8,7 +8,8 @@ type ProjectProps = {
   title: string;
   technologies: string[];
   overview: string;
-  url: string;
+  demoUrl: string;
+  codeUrl: string;
 };
 
 const Project = ({
@@ -16,7 +17,8 @@ const Project = ({
   title,
   technologies,
   overview,
-  url
+  demoUrl,
+  codeUrl,
 }: ProjectProps) => {
   return (
     <div className="w-full">
@@ -41,14 +43,16 @@ const Project = ({
           <p>Project</p>
           <h2 className="text-2xl font-bold">Overview</h2>
           <p>{overview}</p>
-          <Link href={url}>
-          <button className="bg-[#6561e5] rounded-lg mt-2 text-white px-6 py-1 mr-6">
-            DEMO
-          </button>
+          <Link href={demoUrl}>
+            <button className="bg-[#6561e5] rounded-lg mt-2 text-white px-6 py-1 mr-6">
+              DEMO
+            </button>
           </Link>
-          <button className="bg-[#6561e5] rounded-lg mt-2 text-white px-6 py-1">
-            CODE
-          </button>
+          <Link href={codeUrl}>
+            <button className="bg-[#6561e5] rounded-lg mt-2 text-white px-6 py-1">
+              CODE
+            </button>
+          </Link>
         </div>
         <div className="col-span-4 md:col-span-1 rounded-xl p-4">
           <div className="p-2">
