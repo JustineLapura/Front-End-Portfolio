@@ -58,7 +58,7 @@ const Page = () => {
                       <td className="p-3 px-5 flex justify-end">
                         <button
                           type="button"
-                          className="text-sm bg-red-500 mx-auto hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline"
+                          className="text-sm bg-red-500 mx-auto mt-2 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline"
                         >
                           Cancel
                         </button>

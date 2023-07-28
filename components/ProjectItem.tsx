@@ -19,7 +19,7 @@ const ProjectItem = ({ title, img, url, framework }: ProjectType) => {
           src={img}
           alt="property"
         />
-        <div className="absolute pb-4 bottom-0 h-1/2 bg-gradient-to-t from-black w-full hidden items-end justify-center transition-all duration-300 gap-4 group-hover:flex group-hover:">
+        <div className="absolute pb-4 bottom-0 h-1/2 bg-gradient-to-t from-black/50 w-full hidden items-end justify-center transition-all duration-300 gap-4 group-hover:flex group-hover:">
           <h1 className="text-2xl font-bold text-white">{title}</h1>
           <p className=" text-white">{framework}</p>
         </div>

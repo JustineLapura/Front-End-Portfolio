@@ -46,7 +46,7 @@ const Page = () => {
   };
 
   return (
-    <div className="h-screen w-full bg-blue-100 text-gray-900 pt-[100px]">
+    <div className="h-screen w-full text-gray-900 pt-[100px]">
       <div className="flex justify-center pt-4">
         <h1 className="text-xl md:text-2xl lg:text-3xl font-bold">
           Appointments
