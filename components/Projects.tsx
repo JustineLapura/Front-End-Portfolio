@@ -43,7 +43,7 @@ const Projects = () => {
           Projects
         </p>
         <h2 className="text-2xl py-4 font-bold">What I&apos;ve Built</h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
           {projects.map((project) => (
             <ProjectItem
               key={project.title}

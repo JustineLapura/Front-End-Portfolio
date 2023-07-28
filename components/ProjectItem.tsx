@@ -13,7 +13,7 @@ const ProjectItem = ({ title, img, url, framework }: ProjectType) => {
 
   return (
     <Link href={url}>
-      <div className="group relative w-full max-w-[550px] transform transition overflow-hidden rounded-2xl duration-300">
+      <div className="group relative w-full max-w-[550px] mx-auto transform transition overflow-hidden rounded-2xl duration-300">
         <Image
           className="h-full w-full rounded-3xl object-contain object-center"
           src={img}
