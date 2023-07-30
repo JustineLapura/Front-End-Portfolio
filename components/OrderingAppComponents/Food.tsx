@@ -142,7 +142,7 @@ const Food = () => {
             />
             <div className="flex justify-between px-2 py-4">
               <p
-                className={`font-bold duration-300 ${
+                className={`font-bold duration-300 text-sm sm:text-base ${
                   mode === "light" ? "" : "text-white"
                 }`}
               >

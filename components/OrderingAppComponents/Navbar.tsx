@@ -54,7 +54,7 @@ const Navbar = () => {
       </div>
 
       {/* search input */}
-      <div className="bg-gray-200 rounded-full flex items-center px-2 w-[200px] sm:w-[400px] lg:w-[500px]">
+      <div className="hidden bg-gray-200 rounded-full md:flex items-center px-2 w-[200px] sm:w-[400px] lg:w-[500px]">
         <AiOutlineSearch
           size={20}
           className={mode === "light" ? "" : "text-[#010101]"}
@@ -76,7 +76,7 @@ const Navbar = () => {
         <button
           className={`${
             mode === "light" ? "bg-black text-white" : "bg-white text-black"
-          } flex items-center rounded-full py-2 px-5 relative`}
+          } flex items-center rounded-full py-2 px-5 relative ml-4`}
         >
           <BsFillCartFill size={20} className="mr-2" /> 
           Cart
