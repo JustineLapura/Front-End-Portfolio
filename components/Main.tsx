@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaFacebook } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
@@ -42,9 +42,11 @@ const Main = () => {
                 <AiOutlineMail />
               </div>
             </Link>
-            <div className="rounded-full text-xl cursor-pointer hover:text-[#5651e5] hover:scale-110 ease-in duration-200">
-              <BsFillPersonLinesFill />
-            </div>
+            <Link href="https://www.facebook.com/justine.lapura.5">
+              <div className="rounded-full text-xl cursor-pointer hover:text-[#5651e5] hover:scale-110 ease-in duration-200">
+                <FaFacebook />
+              </div>
+            </Link>
           </div>
         </div>
       </div>

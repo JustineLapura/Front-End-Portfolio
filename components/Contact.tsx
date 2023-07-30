@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import profile from "/public/champion.jpg";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaFacebook } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
@@ -52,9 +52,11 @@ const Contact = () => {
                       <AiOutlineMail />
                     </div>
                   </Link>
-                  <div className="rounded-full p-4 cursor-pointer hover:text-[#5651e5] hover:scale-110 ease-in duration-500">
-                    <BsFillPersonLinesFill />
-                  </div>
+                  <Link href="https://www.facebook.com/justine.lapura.5">
+                    <div className="rounded-full p-4 cursor-pointer hover:text-[#5651e5] hover:scale-110 ease-in duration-500">
+                      <FaFacebook />
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
