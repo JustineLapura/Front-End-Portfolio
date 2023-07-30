@@ -27,15 +27,17 @@ const Main = () => {
             products.
           </p>
           <div className="flex items-center justify-between text-gray-700 w-[70%] max-w-[330px] m-auto py-4">
-            <div className="rounded-full text-xl cursor-pointer hover:text-[#5651e5] hover:scale-110 ease-in duration-200">
-              <FaLinkedinIn />
-            </div>
+            <Link href="https://www.linkedin.com/in/justinelapura/">
+              <div className="rounded-full text-xl cursor-pointer hover:text-[#5651e5] hover:scale-110 ease-in duration-200">
+                <FaLinkedinIn />
+              </div>
+            </Link>
             <Link href="https://github.com/JustineLapura?tab=repositories">
               <div className="rounded-full text-xl cursor-pointer hover:text-[#5651e5] hover:scale-110 ease-in duration-200">
                 <FaGithub />
               </div>
             </Link>
-            <Link href="mailto:justinelapura002@gmail.com">
+            <Link href="mailto:justinelapura001@gmail.com">
               <div className="rounded-full text-xl cursor-pointer hover:text-[#5651e5] hover:scale-110 ease-in duration-200">
                 <AiOutlineMail />
               </div>

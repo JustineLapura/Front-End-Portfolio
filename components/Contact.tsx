@@ -37,15 +37,17 @@ const Contact = () => {
               <div className="">
                 <p className="text-xl uppercase pt-8">Connect with me</p>
                 <div className="flex items-center justify-between py-4">
-                  <div className="rounded-full p-5 cursor-pointer hover:text-[#5651e5] hover:scale-110 ease-in duration-500">
-                    <FaLinkedinIn />
-                  </div>
+                  <Link href="https://www.linkedin.com/in/justinelapura/">
+                    <div className="rounded-full p-5 cursor-pointer hover:text-[#5651e5] hover:scale-110 ease-in duration-500">
+                      <FaLinkedinIn />
+                    </div>
+                  </Link>
                   <Link href="https://github.com/JustineLapura?tab=repositories">
                     <div className="rounded-full p-5 cursor-pointer hover:text-[#5651e5] hover:scale-110 ease-in duration-500">
                       <FaGithub />
                     </div>
                   </Link>
-                  <Link href="mailto:justinelapura002@gmail.com">
+                  <Link href="mailto:justinelapura001@gmail.com">
                     <div className="rounded-full p-5 cursor-pointer hover:text-[#5651e5] hover:scale-110 ease-in duration-500">
                       <AiOutlineMail />
                     </div>
