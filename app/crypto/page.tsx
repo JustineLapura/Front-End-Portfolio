@@ -7,11 +7,11 @@ const Page = () => {
     <>
       <Project
         projectImg={DentalClinicImg}
-        title="Dental Clinic App"
-        demoUrl="/crypto/demo-1"
+        title="Smile Care Dental Clinic"
+        demoUrl="https://smilecaredentalclinic.vercel.app/"
         codeUrl="https://github.com/JustineLapura/Dental-Clinic-Appointment-Reservation-System"
         overview="This Dental Clinic system offers a user-friendly interface that allows dental professionals to efficiently manage various aspects of their practice. From appointment scheduling and patient records management to treatment planning, the Dental Clinic System provides a seamless platform for dentists and staff to deliver high-quality dental care."
-        technologies={["HTML", "CSS", "Javascript", "React"]}
+        technologies={["HTML", "CSS", "Javascript", "React", "Bootstrap"]}
       />
     </>
   );
