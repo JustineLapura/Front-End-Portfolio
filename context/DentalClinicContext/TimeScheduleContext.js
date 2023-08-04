@@ -23,7 +23,6 @@ export const TimeScheduleProvider = ({ children }) => {
         ];
   });
 
-  console.log(schedule)
 
   // Save schedule to localStorage whenever it changes
   useEffect(() => {
