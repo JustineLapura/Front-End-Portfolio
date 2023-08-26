@@ -47,7 +47,7 @@ const Contact = () => {
                       <FaGithub />
                     </div>
                   </Link>
-                  <Link href="mailto:justinelapura001@gmail.com">
+                  <Link href="mailto:justinelapura002@gmail.com">
                     <div className="rounded-full p-5 cursor-pointer hover:text-[#5651e5] hover:scale-110 ease-in duration-500">
                       <AiOutlineMail />
                     </div>
