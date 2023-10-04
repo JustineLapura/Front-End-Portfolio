@@ -9,9 +9,9 @@ const Page = () => {
     <>
       <Project
         projectImg={orderingImg}
-        title="Food Ordering App"
-        demoUrl="/property/demo-1"
-        codeUrl="https://github.com/JustineLapura/Just-Eats-Food-ordering-app"
+        title="Auxillaryy Services System"
+        demoUrl="https://ssu-auxillary-system.vercel.app/"
+        codeUrl="https://github.com/JustineLapura/Auxilliary-project"
         overview="A property finder app is a software application designed to help users search, discover, and explore real estate properties available for sale or rent. These apps aim to simplify the property search process by providing users with a comprehensive platform to find their ideal properties."
         technologies={[
           "React",

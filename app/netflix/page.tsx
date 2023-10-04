@@ -7,10 +7,10 @@ const Page = () => {
     <>
       <Project
         projectImg={netflixImg}
-        title="Netflix App"
-        demoUrl="/netflix-demo-1"
-        codeUrl="#"
-        overview="A Netflix app is a software application that allows users to access and stream a vast library of movies, TV shows, documentaries, and other video content provided by Netflix, a popular subscription-based streaming service. The Netflix app offers a user-friendly interface for browsing, searching, and watching a wide range of entertainment content."
+        title="Food Ordering App"
+        demoUrl="/property/demo-1"
+        codeUrl="https://github.com/JustineLapura/Just-Eats-Food-ordering-app"
+        overview="A property finder app is a software application designed to help users search, discover, and explore real estate properties available for sale or rent. These apps aim to simplify the property search process by providing users with a comprehensive platform to find their ideal properties."
         technologies={[
           "Next Js",
           "Tailwind CSS",

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import orderingImg from "/public/ordering.jpg";
-import cryptoImg from "/public/crypto.jpg";
+import auxillaryImg from "/public/auxillary.jpg";
 import twitchImg from "/public/twitch.jpg";
 import netflixImg from "/public/netflix.jpg";
 import dentalImg from "/public/DentalClinic.jpg";
@@ -10,28 +10,28 @@ import ProjectItem from "./ProjectItem";
 
 const projects = [
   {
-    title: "Food Ordering App",
-    img: orderingImg,
+    title: "Auxillary Services System",
+    img: auxillaryImg,
     url: "/property",
-    framework: 'Next js'
+    framework: "Next js",
   },
   {
     title: "Dental Clinic App",
     img: dentalImg,
     url: "/crypto",
-    framework: 'React js'
+    framework: "React js",
   },
   {
-    title: "Netflix App",
-    img: netflixImg,
+    title: "Food Ordering App",
+    img: orderingImg,
     url: "/netflix",
-    framework: 'Next js'
+    framework: "Next js",
   },
   {
     title: "Twitch App",
     img: twitchImg,
     url: "/twitch",
-    framework: 'Next js'
+    framework: "Next js",
   },
 ];
 
