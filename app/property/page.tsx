@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import orderingImg from "/public/ordering.jpg";
+import auxillaryImg from "/public/auxillary.jpg";
 import Project from "@/components/Project";
 import { URL } from "url";
 
@@ -8,7 +8,7 @@ const Page = () => {
   return (
     <>
       <Project
-        projectImg={orderingImg}
+        projectImg={auxillaryImg}
         title="Auxillaryy Services System"
         demoUrl="https://ssu-auxillary-system.vercel.app/"
         codeUrl="https://github.com/JustineLapura/Auxilliary-project"
