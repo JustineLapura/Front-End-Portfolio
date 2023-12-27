@@ -16,15 +16,17 @@ const About = () => {
           <h2 className="text-3xl font-bold py-4">Who I Am</h2>
           <p className="py-2 text-gray-600">
             Hey there! I&apos;m Justine, a passionate web developer with a
-            Bachelor of Science in Information Technology. I love crafting
-            user-friendly websites using HTML, CSS, and JavaScript. I&apos;ve also
-            mastered popular frameworks like React.js and Next.js to create
-            dynamic web applications.
+            Bachelor of Science in Information Technology. I enjoy the creative
+            process of designing user-friendly and visually appealing web
+            interfaces, and I am committed to writing clean and maintainable
+            code to ensure the delivery of high-quality products. My goal is to
+            contribute to the seamless integration of both front-end and
+            back-end components to create robust and efficient web applications.
           </p>
           <p className="py-2 text-gray-600">
             Check out some of my latest projects below, and let&apos;s build the
-            future of the web together! Feel free to get in touch—I&apos;m always
-            excited to collaborate on new opportunities.
+            future of the web together! Feel free to get in touch—I&apos;m
+            always excited to collaborate on new opportunities.
           </p>
           <Link href="/#projects">
             <p className="py-2 text-gray-600 cursor-pointer underline ">

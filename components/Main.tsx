@@ -32,20 +32,22 @@ const Main = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 1 }}
           >
-            A Front-End Web Developer
+            A Full-Stack Web Developer
           </motion.h1>
           <motion.p
-            className="py-4 text-sm text-gray-600 max-w-[70%] mx-auto text-justify md:text-center"
+            className="py-4 text-base text-gray-600 max-w-[70%] mx-auto text-justify md:text-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.5 }}
           >
-            I am an aspiring junior front-end developer with a passion for web
-            development. I have a solid foundation in HTML, CSS, JavaScript,
-            React js, Next.js, Tailwind CSS, and TypeScript. I enjoy creating
-            user-friendly and visually appealing web interfaces. I believe in
-            writing clean and maintainable code to deliver high-quality
-            products.
+            I am an aspiring junior full-stack web developer with a passion for
+            comprehensive web development. I possess a strong foundation in both
+            front-end and back-end technologies, including HTML, CSS,
+            JavaScript, React.js, Next.js, Bootstrap, Tailwind CSS, and TypeScript. In
+            addition to my proficiency in the client-side development, I am
+            well-versed in server-side technologies such as Node.js and
+            Express.js. My expertise extends to database management,
+            particularly with MongoDB.
           </motion.p>
           <div className="flex items-center justify-between text-gray-700 w-[70%] max-w-[330px] m-auto py-4">
             <Link href="https://www.linkedin.com/in/justinelapura/">
