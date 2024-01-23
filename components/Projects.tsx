@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import orderingImg from "/public/ordering.jpg";
 import auxillaryImg from "/public/auxillary.jpg";
-import twitchImg from "/public/twitch.jpg";
+import ecommerceImg from "/public/ecommerce.jpg";
 import netflixImg from "/public/netflix.jpg";
 import dentalImg from "/public/DentalClinic.jpg";
 import Link from "next/link";
@@ -28,8 +28,8 @@ const projects = [
     framework: "Next js",
   },
   {
-    title: "Twitch App",
-    img: twitchImg,
+    title: "E-Commerce App",
+    img: ecommerceImg,
     url: "/twitch",
     framework: "Next js",
   },

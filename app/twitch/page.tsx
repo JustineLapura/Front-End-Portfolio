@@ -1,26 +1,20 @@
-import Project from '@/components/Project'
-import React from 'react'
-import twitchImg from "/public/twitch.jpg"
+import Project from "@/components/Project";
+import React from "react";
+import ecommerceImg from "/public/ecommerce.jpg";
 
 const page = () => {
   return (
     <>
       <Project
-        projectImg={twitchImg}
-        title="Twitch App"
-        demoUrl='/twitch/demo-1'
-        codeUrl='#'
-        overview="A Twitch app is a software application that allows users to access and interact with the Twitch platform, which is a popular live streaming service primarily focused on video game streaming, eSports events, and creative content. The Twitch app provides a platform for users to watch live streams, engage with streamers and their communities, and discover a wide range of content related to gaming and creative endeavors."
-        technologies={[
-          "React",
-          "Next Js",
-          "Tailwind CSS",
-          "Typescript",
-          "MongoDB",
-        ]}
+        projectImg={ecommerceImg}
+        title="E-Commerce App"
+        demoUrl="https://e-commerce-justinelapura.vercel.app/"
+        codeUrl="https://github.com/JustineLapura/e-commerce-product-page"
+        overview="An e-commerce app is a software application that enables users to access and engage with an online shopping platform. This platform provides a virtual marketplace where users can browse and purchase a variety of products. The e-commerce app facilitates a seamless shopping experience, allowing users to explore different categories, view product details, make secure transactions, and track their orders."
+        technologies={["React", "Next Js", "Tailwind CSS", "Typescript"]}
       />
     </>
-  )
-}
+  );
+};
 
-export default page
+export default page;
